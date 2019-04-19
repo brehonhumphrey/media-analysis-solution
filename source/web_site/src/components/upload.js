@@ -170,7 +170,7 @@ class Upload extends Component {
     let reader = new FileReader();
     let file = e.target.files[0];
     if (file) {
-      if (file.size <= 100000000) {
+      if (file.size <= 10000000000) {
           let file_type = file.type.split('/')[0];
           reader.onloadend = () => {
             this.setState({
